@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: "Bogart";
+	src: local("Bogart"), url(./fonts/Bogart-Regular.ttf) format("truetype");
+}
