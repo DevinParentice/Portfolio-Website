@@ -1,5 +1,6 @@
 import React from "react";
 import CELLS from 'vanta/dist/vanta.cells.min';
+import ScrollSnap from 'scroll-snap';
 import Project1 from "./components/Project1";
 import SplashPage from './components/SplashPage'
 import TopBar from "./components/TopBar";
@@ -24,7 +25,7 @@ class App extends React.Component {
 			color1: 0x343434,
 			color2: 0x0,
 			size: 2.50,
-			speed: 0.00
+			speed: 1.00
 		});
 	}
 
@@ -35,15 +36,16 @@ class App extends React.Component {
 	render() {
 		return (
 			<div className="App bg-gray-900 overflow-hidden">
-				<div ref={this.vantaRef} className="sections">
-					<TopBar />
-					<SplashPage />
-					<Project1 />
+				<div ref={this.vantaRef}>
+					<div className="sections">
+						<TopBar />
+						<SplashPage />
+						<Project1 />
+					</div>
 				</div>
 			</div>
 		  );
 	}
-
 }
 
 export default App;
