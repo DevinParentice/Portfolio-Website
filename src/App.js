@@ -1,6 +1,5 @@
 import React from "react";
 import CELLS from 'vanta/dist/vanta.cells.min';
-import ScrollSnap from 'scroll-snap';
 import Project1 from "./components/Project1";
 import SplashPage from './components/SplashPage'
 import TopBar from "./components/TopBar";
