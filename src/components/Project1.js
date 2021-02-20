@@ -12,7 +12,7 @@ class Project1 extends React.Component {
 	
 	render() {
 		return (
-			<div ref={el => this.scene = el} className="flex w-screen h-screen items-center">
+			<section ref={el => this.scene = el} className="flex w-screen h-screen items-center">
 				<div className="container" data-depth="0.20">
 					<h1 className="main-text text-6xl sm:text-9xl text-white ml-8">Cirillo's Artisan Pizza</h1>
 					<div className="flex">
@@ -24,7 +24,7 @@ class Project1 extends React.Component {
 						</a>
 					</div>
 				</div>
-			</div>
+			</section>
 		);
 	}
 }

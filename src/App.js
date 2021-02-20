@@ -36,10 +36,12 @@ class App extends React.Component {
 		return (
 			<div className="App bg-gray-900 overflow-hidden">
 				<div ref={this.vantaRef}>
-					<div className="sections">
+					<div>
 						<TopBar />
-						<SplashPage />
-						<Project1 />
+						<main className="sections">
+							<SplashPage />
+							<Project1 />
+						</main>
 					</div>
 				</div>
 			</div>

@@ -14,7 +14,7 @@ class SplashPage extends React.Component {
 
 	render() {
 		return (
-			<div ref={el => this.scene = el} className="flex flex-row w-screen h-screen items-center">
+			<section ref={el => this.scene = el} className="flex flex-row w-screen h-screen items-center">
 				<div className="container" data-depth="0.20">
 					<h1 className="main-text text-6xl sm:text-9xl text-white ml-10">Devin Parentice</h1>
 					<div className="flex">
@@ -23,7 +23,7 @@ class SplashPage extends React.Component {
 						</a>
 					</div>
 				</div>
-			</div>
+			</section>
 		);
 	}
 }
