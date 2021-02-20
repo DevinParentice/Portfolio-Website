@@ -3,10 +3,21 @@
 @tailwind utilities;
 
 @font-face {
-	font-family: "Bogart";
-	src: local("Bogart"), url(../fonts/Bogart-Regular.ttf) format("truetype");
+	font-family: "Bogart-Regular";
+	src: local("Bogart-Regular"),
+		url(../fonts/Bogart-Regular.ttf) format("truetype");
 }
 
-.container {
-	pointer-events: auto;
+@font-face {
+	font-family: "Bogart-Light";
+	src: local("Bogart-Light"), url(../fonts/Bogart-Light.ttf) format("truetype");
+}
+
+.container,
+.navbar {
+	pointer-events: auto !important;
+}
+
+.nav-item {
+	position: relative !important;
 }

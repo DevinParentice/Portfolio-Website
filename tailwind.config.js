@@ -7,7 +7,8 @@ module.exports = {
   theme: {
 	extend: {
 		fontfamily: {
-			'bogart': ['Bogart', 'sans-serif']
+			'bogart-regular': ['Bogart-Regular', 'sans-serif'],
+			'bogart-light': ['Bogart-Light', 'sans-serif'],
 		}
 	},
     screens: {

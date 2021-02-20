@@ -10,7 +10,7 @@ function Project1() {
 						<h3 className="main-text text-4xl text-white ml-8 border-b-2 hover:text-gray-400 hover:border-gray-400">View Site</h3>
 					</a>
 					<a href="https://github.com/DevinParentice/cirillos-pizza" target="_blank">
-						<h3 className="main-text text-4xl text-white ml-8 border-b-2 hover:text-gray-400 hover:border-gray-400">View Code</h3>
+						<h3 className="sub-text text-4xl text-white ml-8 border-b-2 hover:text-gray-400 hover:border-gray-400">View Code</h3>
 					</a>
 				</div>
 			</div>

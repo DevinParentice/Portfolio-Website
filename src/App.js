@@ -2,6 +2,7 @@ import React from "react";
 import CELLS from 'vanta/dist/vanta.cells.min';
 import Project1 from "./components/Project1";
 import SplashPage from './components/SplashPage'
+import TopBar from "./components/TopBar";
 import "./styles/App.css";
 
 class App extends React.Component {
@@ -35,6 +36,7 @@ class App extends React.Component {
 		return (
 			<div className="App bg-gray-900 overflow-hidden">
 				<div ref={this.vantaRef} className="sections">
+					<TopBar />
 					<SplashPage />
 					<Project1 />
 				</div>

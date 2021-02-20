@@ -5,6 +5,17 @@
 }
 
 .main-text {
-	font-family: Bogart, sans-serif;
+	font-family: Bogart-Regular, sans-serif;
 	display: table;
 }
+
+.sub-text {
+	font-family: Bogart-Light, sans-serif;
+	display: table;
+}
+
+/* .sections.active {
+	cursor: grabbing;
+	cursor: -webkit-grabbing;
+	transform: scale(1);
+} */
