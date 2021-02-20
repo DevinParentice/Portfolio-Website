@@ -4,6 +4,14 @@
 	box-sizing: border-box;
 }
 
+::-moz-selection {
+	background: gray;
+}
+
+::selection {
+	background: gray;
+}
+
 .main-text {
 	font-family: Bogart-Regular, sans-serif;
 	display: table;
