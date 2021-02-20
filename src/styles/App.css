@@ -52,7 +52,7 @@ a {
 }
 
 .cursor-link-hovered {
-	transform: translate(-50%, -50%) scale(1.5);
+	transform: translate(-50%, -50%) scale(1.8);
 	background-color: #fefefe;
 }
 
