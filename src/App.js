@@ -1,13 +1,12 @@
 import React from "react";
-import CELLS from 'vanta/dist/vanta.cells.min';
-import ReactFullpage from '@fullpage/react-fullpage';
+import CELLS from "vanta/dist/vanta.cells.min";
+import ReactFullpage from "@fullpage/react-fullpage";
 import Project1 from "./components/Project1";
-import SplashPage from './components/SplashPage'
+import SplashPage from "./components/SplashPage";
 import TopBar from "./components/TopBar";
 import "./styles/App.css";
 
 class App extends React.Component {
-
 	constructor() {
 		super();
 		this.vantaRef = React.createRef();
@@ -19,13 +18,13 @@ class App extends React.Component {
 			mouseControls: true,
 			touchControls: true,
 			gyroControls: true,
-			minHeight: 200.00,
-			minWidth: 200.00,
-			scale: 1.00,
+			minHeight: 200.0,
+			minWidth: 200.0,
+			scale: 1.0,
 			color1: 0x343434,
 			color2: 0x0,
-			size: 2.50,
-			speed: 1.00
+			size: 2.5,
+			speed: 1.0,
 		});
 	}
 
@@ -39,25 +38,25 @@ class App extends React.Component {
 				<div ref={this.vantaRef}>
 					<div>
 						<TopBar />
-							<ReactFullpage
-								scrollOverflow={false}
-								render={({ state, fullpageApi }) => {
-									return (
-										<div>
-											<div id="fullpage-wrapper">
-												<main className="sections">
-													<SplashPage />
-													<Project1 />
-												</main>
-											</div>
+						<ReactFullpage
+							scrollOverflow={false}
+							render={({ state, fullpageApi }) => {
+								return (
+									<div>
+										<div id="fullpage-wrapper">
+											<main className="sections">
+												<SplashPage />
+												<Project1 />
+											</main>
 										</div>
-									);
-								}}
-							/>
+									</div>
+								);
+							}}
+						/>
 					</div>
 				</div>
 			</div>
-		  );
+		);
 	}
 }
 
