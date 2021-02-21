@@ -34,7 +34,7 @@ class App extends React.Component {
 
 	render() {
 		return (
-			<div className="App bg-gray-900 overflow-hidden">
+			<div className="App">
 				<div ref={this.vantaRef}>
 					<div>
 						<TopBar />
