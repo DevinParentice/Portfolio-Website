@@ -13,12 +13,6 @@
 	src: local("Bogart-Light"), url(../fonts/Bogart-Light.ttf) format("truetype");
 }
 
-.container,
-nav,
-.navbar {
-	pointer-events: auto !important;
-}
-
 .nav-item {
 	position: relative !important;
 }

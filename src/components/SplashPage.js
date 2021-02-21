@@ -4,7 +4,9 @@ import pdf from "../documents/DevinParenticeResume.pdf";
 
 class SplashPage extends React.Component {
 	componentDidMount() {
-		this.parallax = new Parallax(this.scene);
+		this.parallax = new Parallax(this.scene, {
+			pointerEvents: true,
+		});
 	}
 
 	componentWillUnmount() {

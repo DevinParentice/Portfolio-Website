@@ -3,7 +3,9 @@ import Parallax from "parallax-js";
 
 export class TopBar extends Component {
 	componentDidMount() {
-		this.parallax = new Parallax(this.scene);
+		this.parallax = new Parallax(this.scene, {
+			pointerEvents: true,
+		});
 	}
 
 	componentWillUnmount() {

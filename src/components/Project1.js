@@ -3,7 +3,9 @@ import Parallax from "parallax-js";
 import P1Images from "./P1Images";
 class Project1 extends React.Component {
 	componentDidMount() {
-		this.parallax = new Parallax(this.scene);
+		this.parallax = new Parallax(this.scene, {
+			pointerEvents: true,
+		});
 	}
 
 	componentWillUnmount() {
@@ -36,7 +38,7 @@ class Project1 extends React.Component {
 						</a>
 					</div>
 				</div>
-				<div className="container" data-depth="0.40">
+				<div className="container" data-depth="0.80">
 					<P1Images />
 				</div>
 			</section>
