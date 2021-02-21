@@ -13,7 +13,7 @@ class Project1 extends React.Component {
 	
 	render() {
 		return (
-			<section ref={el => this.scene = el} className="flex flex-row w-screen h-screen max-w-full items-center">
+			<section ref={el => this.scene = el} className="section flex flex-row w-screen h-screen max-w-full items-center">
 				<div className="container z-10" data-depth="0.20">
 					<h1 className="main-text text-6xl sm:text-9xl text-white ml-8">Cirillo's Artisan Pizza</h1>
 					<div className="flex">

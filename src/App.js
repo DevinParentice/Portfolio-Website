@@ -1,5 +1,6 @@
 import React from "react";
 import CELLS from 'vanta/dist/vanta.cells.min';
+import ReactFullpage from '@fullpage/react-fullpage';
 import Project1 from "./components/Project1";
 import SplashPage from './components/SplashPage'
 import TopBar from "./components/TopBar";
@@ -37,11 +38,29 @@ class App extends React.Component {
 			<div className="App">
 				<div ref={this.vantaRef}>
 					<div>
-						<TopBar />
-						<main className="sections">
-							<SplashPage />
-							<Project1 />
-						</main>
+							<ReactFullpage
+								scrollOverflow={false}
+								render={({ state, fullpageApi }) => {
+									return (
+										<div>
+											<TopBar />
+											<div id="fullpage-wrapper">
+												<main className="sections">
+													<SplashPage />
+													<Project1 />
+												</main>
+											</div>
+										</div>
+									);
+								}}
+							/>
+						{/* <div id="fullpage-wrapper">
+											<TopBar />
+											<main className="sections">
+												<SplashPage />
+												<Project1 />
+											</main>
+										</div> */}
 					</div>
 				</div>
 			</div>

@@ -56,16 +56,6 @@ a {
 	background-color: #fefefe;
 }
 
-.sections {
-	/* transform: scale(1); */
-	scroll-snap-type: y mandatory;
-}
-
-section {
-	scroll-snap-align: start;
-	scroll-snap-stop: normal;
-}
-
 /* * {
 	background: #000 !important;
 	color: #0f0 !important;
