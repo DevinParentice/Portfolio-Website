@@ -37,13 +37,14 @@ class App extends React.Component {
 			<div className="App">
 				<div ref={this.vantaRef}>
 					<div>
-						<TopBar />
 						<ReactFullpage
 							scrollOverflow={false}
+							fixedElements={".navbar"}
 							render={({ state, fullpageApi }) => {
 								return (
 									<div>
 										<div id="fullpage-wrapper">
+											<TopBar />
 											<main className="sections">
 												<SplashPage />
 												<Project1 />
@@ -53,6 +54,14 @@ class App extends React.Component {
 								);
 							}}
 						/>
+						{/* <div>
+							<div id="fullpage-wrapper">
+								<main className="sections">
+									<SplashPage />
+									<Project1 />
+								</main>
+							</div>
+						</div> */}
 					</div>
 				</div>
 			</div>

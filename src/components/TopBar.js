@@ -22,7 +22,7 @@ export class TopBar extends Component {
 					href="https://github.com/DevinParentice"
 					target="_blank"
 					className="nav-item"
-					data-depth="0.10"
+					data-depth="0.15"
 				>
 					<i className="fab fa-github-alt fa-3x text-white hover:text-white"></i>
 				</a>
@@ -30,7 +30,7 @@ export class TopBar extends Component {
 					href="https://www.linkedin.com/in/devin-parentice-2372b4170/"
 					target="_blank"
 					className="nav-item"
-					data-depth="0.10"
+					data-depth="0.15"
 				>
 					<i className="fab fa-linkedin-in fa-3x text-white hover:text-white"></i>
 				</a>
@@ -39,7 +39,7 @@ export class TopBar extends Component {
 						navigator.clipboard.writeText("devinparentice@gmail.com");
 					}}
 					className="nav-item"
-					data-depth="0.10"
+					data-depth="0.15"
 				>
 					<i className="fas fa-paper-plane fa-3x text-white hover:text-white"></i>
 				</a>

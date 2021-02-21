@@ -6,10 +6,15 @@ class Project1 extends React.Component {
 		this.parallax = new Parallax(this.scene, {
 			pointerEvents: true,
 		});
+		this.parallax2 = new Parallax(this.scene2, {
+			pointerEvents: true,
+			relativeInput: true,
+		});
 	}
 
 	componentWillUnmount() {
 		this.parallax.disable();
+		this.parallax2.disable();
 	}
 
 	render() {
@@ -19,7 +24,7 @@ class Project1 extends React.Component {
 				className="section flex flex-row w-screen h-screen max-w-full items-center"
 			>
 				<div className="container z-10" data-depth="0.20">
-					<h2 className="main-text text-6xl sm:text-9xl text-white ml-8">
+					<h2 className="main-text select-none text-6xl sm:text-9xl text-white ml-8">
 						Cirillo's Artisan Pizza
 					</h2>
 					<div className="flex">
@@ -38,7 +43,7 @@ class Project1 extends React.Component {
 						</a>
 					</div>
 				</div>
-				<div className="container" data-depth="0.80">
+				<div ref={(el) => (this.scene2 = el)} className="container">
 					<P1Images />
 				</div>
 			</section>
