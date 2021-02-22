@@ -29,7 +29,7 @@ class Project1 extends React.Component {
 					</h2>
 					<div className="flex w-screen">
 						<a href="https://www.cirilloswestchester.com/" target="_blank">
-							<h3 className="main-text text-2xl sm:text-4xl text-white ml-10 border-b-2 hover:text-white hover:border-wite">
+							<h3 className="sub-text select-none text-2xl sm:text-4xl text-white ml-10 border-b-2 hover:text-white hover:border-wite">
 								View Site
 							</h3>
 						</a>
@@ -37,7 +37,7 @@ class Project1 extends React.Component {
 							href="https://github.com/DevinParentice/cirillos-pizza"
 							target="_blank"
 						>
-							<h3 className="sub-text text-2xl sm:text-4xl text-white ml-10 border-b-2 hover:text-white hover:border-wite">
+							<h3 className="sub-text select-none text-2xl sm:text-4xl text-white ml-10 border-b-2 hover:text-white hover:border-wite">
 								View Code
 							</h3>
 						</a>

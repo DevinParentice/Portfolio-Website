@@ -21,9 +21,9 @@ class App extends React.Component {
 			minHeight: 200.0,
 			minWidth: 200.0,
 			scale: 1.0,
-			color1: 0x343434,
-			color2: 0x0,
-			size: 2.5,
+			color1: 0x0,
+			color2: 0x252525,
+			size: 5.0,
 			speed: 1.0,
 		});
 	}
@@ -54,14 +54,6 @@ class App extends React.Component {
 								);
 							}}
 						/>
-						{/* <div>
-							<div id="fullpage-wrapper">
-								<main className="sections">
-									<SplashPage />
-									<Project1 />
-								</main>
-							</div>
-						</div> */}
 					</div>
 				</div>
 			</div>

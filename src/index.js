@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import ReactDOM from 'react-dom';
-import './styles/index.css';
-import classNames from 'classnames';
-import App from './App';
+import React, { useEffect, useState } from "react";
+import ReactDOM from "react-dom";
+import "./styles/index.css";
+import classNames from "classnames";
+import App from "./App";
 
 const isMobile = () => {
 	const ua = navigator.userAgent;
@@ -10,9 +10,7 @@ const isMobile = () => {
 };
 
 const Cursor = () => {
-	if (typeof navigator !== 'undefined' && isMobile()) return null; 
-
-	const [position, setPosition] = useState({x: 0, y: 0});
+	const [position, setPosition] = useState({ x: 0, y: 0 });
 	const [hidden, setHidden] = useState(false);
 	const [clicked, setClicked] = useState(false);
 	const [linkHovered, setLinkHovered] = useState(false);
@@ -22,6 +20,8 @@ const Cursor = () => {
 		handleLinkHoverEvents();
 		return () => removeEventListeners();
 	}, []);
+
+	if (typeof navigator !== "undefined" && isMobile()) return null;
 
 	const addEventListeners = () => {
 		document.addEventListener("mousemove", onMouseMove);
@@ -40,14 +40,14 @@ const Cursor = () => {
 	};
 
 	const handleLinkHoverEvents = () => {
-		document.querySelectorAll("a").forEach(el => {
+		document.querySelectorAll("a").forEach((el) => {
 			el.addEventListener("mouseover", () => setLinkHovered(true));
 			el.addEventListener("mouseout", () => setLinkHovered(false));
 		});
 	};
 
 	const onMouseMove = (e) => {
-		setPosition({x: e.clientX, y: e.clientY});
+		setPosition({ x: e.clientX, y: e.clientY });
 	};
 
 	const onMouseEnter = () => {
@@ -66,26 +66,27 @@ const Cursor = () => {
 		setClicked(false);
 	};
 
-	const cursorClasses = classNames(
-		'cursor',
-		{
-			'cursor-clicked': clicked,
-			'cursor-hidden': hidden,
-			'cursor-link-hovered': linkHovered
-		}
-	);
+	const cursorClasses = classNames("cursor", {
+		"cursor-clicked": clicked,
+		"cursor-hidden": hidden,
+		"cursor-link-hovered": linkHovered,
+	});
 
-	return <div className={cursorClasses}
+	return (
+		<div
+			className={cursorClasses}
 			style={{
 				left: `${position.x}px`,
-				top: `${position.y}px`
-			}}/>
-}
+				top: `${position.y}px`,
+			}}
+		/>
+	);
+};
 
 ReactDOM.render(
 	<React.StrictMode>
 		<Cursor />
 		<App />
-  	</React.StrictMode>,
-  document.getElementById('root')
+	</React.StrictMode>,
+	document.getElementById("root")
 );
