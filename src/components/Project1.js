@@ -24,12 +24,12 @@ class Project1 extends React.Component {
 				className="section flex flex-row w-screen h-screen max-w-full items-center"
 			>
 				<div className="container z-10" data-depth="0.20">
-					<h2 className="main-text select-none text-6xl sm:text-9xl text-white ml-8">
+					<h2 className="main-text select-none text-6xl sm:text-9xl text-white ml-10">
 						Cirillo's Artisan Pizza
 					</h2>
-					<div className="flex">
+					<div className="flex w-screen">
 						<a href="https://www.cirilloswestchester.com/" target="_blank">
-							<h3 className="main-text text-2xl sm:text-4xl text-white ml-8 border-b-2 hover:text-white hover:border-wite">
+							<h3 className="main-text text-2xl sm:text-4xl text-white ml-10 border-b-2 hover:text-white hover:border-wite">
 								View Site
 							</h3>
 						</a>
@@ -37,7 +37,7 @@ class Project1 extends React.Component {
 							href="https://github.com/DevinParentice/cirillos-pizza"
 							target="_blank"
 						>
-							<h3 className="sub-text text-2xl sm:text-4xl text-white ml-8 border-b-2 hover:text-white hover:border-wite">
+							<h3 className="sub-text text-2xl sm:text-4xl text-white ml-10 border-b-2 hover:text-white hover:border-wite">
 								View Code
 							</h3>
 						</a>

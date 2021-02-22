@@ -35,9 +35,7 @@ export class TopBar extends Component {
 					<i className="fab fa-linkedin-in fa-3x text-white hover:text-white"></i>
 				</a>
 				<a
-					onClick={() => {
-						navigator.clipboard.writeText("devinparentice@gmail.com");
-					}}
+					href="mailto:devinparentice@gmail.com"
 					className="nav-item"
 					data-depth="0.15"
 				>
