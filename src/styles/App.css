@@ -68,7 +68,3 @@ body {
 	transform: translate(-50%, -50%) scale(1.8);
 	background-color: #fefefe;
 }
-
-.fp-controlArrow {
-	display: none;
-}

@@ -40,6 +40,8 @@ class App extends React.Component {
 						<ReactFullpage
 							scrollOverflow={true}
 							fixedElements={".navbar"}
+							loopHorizontal={false}
+							controlArrows={false}
 							render={({ state, fullpageApi }) => {
 								return (
 									<div>
