@@ -1,11 +1,11 @@
 import React from "react";
 
-export class About extends React.Component {
+export class Project1About extends React.Component {
 	render() {
 		return (
 			<div className="container slide" data-depth="0.20">
 				<h1 className="main-text select-none text-6xl sm:text-9xl text-white ml-10">
-					Test
+					About Cirillo's
 				</h1>
 				<div className="flex">
 					<a href="#" rel="noopener noreferrer" target="_blank">
@@ -19,4 +19,4 @@ export class About extends React.Component {
 	}
 }
 
-export default About;
+export default Project1About;

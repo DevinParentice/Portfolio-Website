@@ -1,6 +1,8 @@
 import React from "react";
 import Parallax from "parallax-js";
 import P1Images from "./P1Images";
+import Project1About from "./Project1About";
+
 class Project1 extends React.Component {
 	componentDidMount() {
 		this.parallax = new Parallax(this.scene, {
@@ -21,15 +23,15 @@ class Project1 extends React.Component {
 		return (
 			<section
 				ref={(el) => (this.scene = el)}
-				className="section flex flex-row w-screen h-screen max-w-full items-center"
+				className="section h-screen flex items-center"
 			>
-				<div className="container z-10" data-depth="0.20">
-					<h2 className="main-text select-none text-6xl sm:text-9xl text-white ml-10">
+				<div className="container slide" data-depth="0.20">
+					<h2 className="relative main-text select-none text-6xl sm:text-9xl text-white ml-10 z-50">
 						Cirillo's Artisan Pizza
 					</h2>
-					<div className="flex w-screen">
+					<div className="relative flex w-screen z-50">
 						<a href="https://www.cirilloswestchester.com/" target="_blank">
-							<h3 className="sub-text select-none text-2xl sm:text-4xl text-white ml-10 border-b-2 hover:text-white hover:border-wite">
+							<h3 className="sub-text select-none text-2xl sm:text-4xl text-white ml-10 border-b-2 hover:text-white hover:border-white">
 								View Site
 							</h3>
 						</a>
@@ -37,15 +39,16 @@ class Project1 extends React.Component {
 							href="https://github.com/DevinParentice/cirillos-pizza"
 							target="_blank"
 						>
-							<h3 className="sub-text select-none text-2xl sm:text-4xl text-white ml-10 border-b-2 hover:text-white hover:border-wite">
+							<h3 className="sub-text select-none text-2xl sm:text-4xl text-white ml-10 border-b-2 hover:text-white hover:border-white">
 								View Code
 							</h3>
 						</a>
 					</div>
+					<div ref={(el) => (this.scene2 = el)} className="absolute top-2 z-0">
+						<P1Images />
+					</div>
 				</div>
-				<div ref={(el) => (this.scene2 = el)} className="container">
-					<P1Images />
-				</div>
+				<Project1About />
 			</section>
 		);
 	}

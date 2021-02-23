@@ -38,7 +38,7 @@ class App extends React.Component {
 				<div ref={this.vantaRef}>
 					<div>
 						<ReactFullpage
-							scrollOverflow={false}
+							scrollOverflow={true}
 							fixedElements={".navbar"}
 							render={({ state, fullpageApi }) => {
 								return (

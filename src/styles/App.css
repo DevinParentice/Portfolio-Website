@@ -10,6 +10,10 @@ a {
 	cursor: none;
 }
 
+body {
+	min-width: 200vw;
+}
+
 ::-moz-selection {
 	background: gray;
 }
@@ -26,6 +30,15 @@ a {
 .sub-text {
 	font-family: Bogart-Light, sans-serif;
 	display: table;
+}
+
+.section {
+	min-width: 200vw;
+}
+
+.container {
+	min-width: 100vw;
+	position: relative !important;
 }
 
 .cursor {
@@ -54,4 +67,8 @@ a {
 .cursor-link-hovered {
 	transform: translate(-50%, -50%) scale(1.8);
 	background-color: #fefefe;
+}
+
+.fp-controlArrow {
+	display: none;
 }

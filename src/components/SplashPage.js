@@ -1,5 +1,6 @@
 import React from "react";
 import Parallax from "parallax-js";
+import About from "./About";
 import pdf from "../documents/DevinParenticeResume.pdf";
 
 class SplashPage extends React.Component {
@@ -17,9 +18,9 @@ class SplashPage extends React.Component {
 		return (
 			<section
 				ref={(el) => (this.scene = el)}
-				className="section section1 flex flex-row w-screen h-screen min-w-full max-w-full items-center"
+				className="section section1 h-screen flex items-center"
 			>
-				<div className="container" data-depth="0.20">
+				<div className="container slide" data-depth="0.20">
 					<h1 className="main-text select-none text-6xl sm:text-9xl text-white ml-10">
 						Devin Parentice
 					</h1>
@@ -31,6 +32,7 @@ class SplashPage extends React.Component {
 						</a>
 					</div>
 				</div>
+				<About />
 			</section>
 		);
 	}
