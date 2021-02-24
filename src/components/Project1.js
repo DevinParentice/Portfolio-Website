@@ -28,7 +28,11 @@ class Project1 extends React.Component {
 							Cirillo's Artisan Pizza
 						</h2>
 						<div className="relative flex w-screen z-50">
-							<a href="https://www.cirilloswestchester.com/" target="_blank">
+							<a
+								href="https://www.cirilloswestchester.com/"
+								target="_blank"
+								className="web-link"
+							>
 								<h3 className="sub-text select-none text-2xl sm:text-4xl text-white ml-10 border-b-2 hover:text-white hover:border-white">
 									View Site
 								</h3>
@@ -36,6 +40,7 @@ class Project1 extends React.Component {
 							<a
 								href="https://github.com/DevinParentice/cirillos-pizza"
 								target="_blank"
+								className="web-link"
 							>
 								<h3 className="sub-text select-none text-2xl sm:text-4xl text-white ml-10 border-b-2 hover:text-white hover:border-white">
 									View Code

@@ -23,7 +23,12 @@ class SplashPage extends React.Component {
 							Devin Parentice
 						</h1>
 						<div className="flex">
-							<a href={pdf} rel="noopener noreferrer" target="_blank">
+							<a
+								href={pdf}
+								rel="noopener noreferrer"
+								target="_blank"
+								className="resume"
+							>
 								<h3 className="sub-text select-none text-2xl sm:text-4xl text-white ml-10 border-b-2 hover:text-white hover:border-wite">
 									View Resume
 								</h3>

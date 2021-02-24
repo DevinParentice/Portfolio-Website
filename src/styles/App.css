@@ -2,17 +2,7 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-}
-
-html,
-body,
-a,
-ul,
-li,
-span,
-.fp-sr-only,
-.fp-nav {
-	cursor: none;
+	cursor: none !important;
 }
 
 body {
