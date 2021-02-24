@@ -74,6 +74,6 @@ body {
 	background-color: #fefefe;
 }
 
-.fp-sr-only {
-	background-color: white;
+span {
+	background-color: white !important;
 }
