@@ -21,34 +21,36 @@ class Project1 extends React.Component {
 
 	render() {
 		return (
-			<section
-				ref={(el) => (this.scene = el)}
-				className="section h-screen flex items-center"
-			>
-				<div className="container slide" data-depth="0.20">
-					<h2 className="relative main-text select-none text-6xl sm:text-9xl text-white ml-10 z-50">
-						Cirillo's Artisan Pizza
-					</h2>
-					<div className="relative flex w-screen z-50">
-						<a href="https://www.cirilloswestchester.com/" target="_blank">
-							<h3 className="sub-text select-none text-2xl sm:text-4xl text-white ml-10 border-b-2 hover:text-white hover:border-white">
-								View Site
-							</h3>
-						</a>
-						<a
-							href="https://github.com/DevinParentice/cirillos-pizza"
-							target="_blank"
+			<section className="section h-screen flex items-center">
+				<div ref={(el) => (this.scene = el)}>
+					<div className="container slide" data-depth="0.10">
+						<h2 className="relative main-text select-none text-6xl sm:text-9xl text-white ml-10 z-50">
+							Cirillo's Artisan Pizza
+						</h2>
+						<div className="relative flex w-screen z-50">
+							<a href="https://www.cirilloswestchester.com/" target="_blank">
+								<h3 className="sub-text select-none text-2xl sm:text-4xl text-white ml-10 border-b-2 hover:text-white hover:border-white">
+									View Site
+								</h3>
+							</a>
+							<a
+								href="https://github.com/DevinParentice/cirillos-pizza"
+								target="_blank"
+							>
+								<h3 className="sub-text select-none text-2xl sm:text-4xl text-white ml-10 border-b-2 hover:text-white hover:border-white">
+									View Code
+								</h3>
+							</a>
+						</div>
+						<div
+							ref={(el) => (this.scene2 = el)}
+							className="absolute top-2 z-0"
 						>
-							<h3 className="sub-text select-none text-2xl sm:text-4xl text-white ml-10 border-b-2 hover:text-white hover:border-white">
-								View Code
-							</h3>
-						</a>
+							<P1Images />
+						</div>
 					</div>
-					<div ref={(el) => (this.scene2 = el)} className="absolute top-2 z-0">
-						<P1Images />
-					</div>
+					<Project1About />
 				</div>
-				<Project1About />
 			</section>
 		);
 	}

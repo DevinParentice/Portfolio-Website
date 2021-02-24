@@ -6,7 +6,12 @@
 
 html,
 body,
-a {
+a,
+ul,
+li,
+span,
+.fp-sr-only,
+.fp-nav {
 	cursor: none;
 }
 
@@ -67,4 +72,8 @@ body {
 .cursor-link-hovered {
 	transform: translate(-50%, -50%) scale(1.8);
 	background-color: #fefefe;
+}
+
+.fp-sr-only {
+	background-color: white;
 }

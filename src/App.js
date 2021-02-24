@@ -42,13 +42,16 @@ class App extends React.Component {
 							fixedElements={".navbar"}
 							loopHorizontal={false}
 							controlArrows={false}
+							navigation={true}
+							navigationPosition={"right"}
+							slidesNavigation={true}
 							render={({ state, fullpageApi }) => {
 								return (
 									<div>
 										<div id="fullpage-wrapper">
 											<TopBar />
 											<main className="sections">
-												<SplashPage />
+												<SplashPage api={fullpageApi} />
 												<Project1 />
 											</main>
 										</div>
