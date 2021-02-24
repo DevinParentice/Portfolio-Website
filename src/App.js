@@ -45,6 +45,8 @@ class App extends React.Component {
 							navigation={true}
 							navigationPosition={"right"}
 							slidesNavigation={true}
+							navigationToolTips={["1", "2", "3"]}
+							showActiveToolTip={true}
 							render={({ state, fullpageApi }) => {
 								return (
 									<div>
