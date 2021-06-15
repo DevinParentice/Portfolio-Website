@@ -5,35 +5,21 @@
 	cursor: none !important;
 }
 
-body {
-	min-width: 200vw;
+.nav-item {
+	position: relative !important;
 }
 
-::-moz-selection {
-	background: gray;
-}
-
+::-moz-selection,
 ::selection {
 	background: gray;
 }
 
 .main-text {
 	font-family: Bogart-Regular, sans-serif;
-	display: table;
 }
 
 .sub-text {
 	font-family: Bogart-Light, sans-serif;
-	display: table;
-}
-
-.section {
-	min-width: 200vw;
-}
-
-.container {
-	min-width: 100vw;
-	position: relative !important;
 }
 
 .cursor {
@@ -62,24 +48,4 @@ body {
 .cursor-link-hovered {
 	transform: translate(-50%, -50%) scale(1.8);
 	background-color: #fefefe;
-}
-
-span {
-	background-color: white !important;
-	transform: scale(2);
-}
-
-#fp-nav ul li {
-	margin: 50px 25px;
-	padding-right: 5px;
-}
-
-#fp-nav ul li a span,
-.fp-slidesNav ul li a span {
-	width: 5px;
-	height: 5px;
-}
-
-.fp-slidesNav ul li {
-	margin: 10px 25px;
 }

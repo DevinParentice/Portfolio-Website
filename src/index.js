@@ -10,18 +10,18 @@ const isMobile = () => {
 };
 
 const Cursor = () => {
+	if (typeof navigator !== "undefined" && isMobile()) return null;
+
 	const [position, setPosition] = useState({ x: 0, y: 0 });
-	const [hidden, setHidden] = useState(false);
 	const [clicked, setClicked] = useState(false);
 	const [linkHovered, setLinkHovered] = useState(false);
+	const [hidden, setHidden] = useState(false);
 
 	useEffect(() => {
 		addEventListeners();
 		handleLinkHoverEvents();
 		return () => removeEventListeners();
 	}, []);
-
-	if (typeof navigator !== "undefined" && isMobile()) return null;
 
 	const addEventListeners = () => {
 		document.addEventListener("mousemove", onMouseMove);
@@ -39,25 +39,8 @@ const Cursor = () => {
 		document.removeEventListener("mouseup", onMouseUp);
 	};
 
-	const handleLinkHoverEvents = () => {
-		document.querySelectorAll("a").forEach((el) => {
-			if (el.hasAttribute("class") && !el.classList.contains("active")) {
-				el.addEventListener("mouseover", () => setLinkHovered(true));
-				el.addEventListener("mouseout", () => setLinkHovered(false));
-			}
-		});
-	};
-
 	const onMouseMove = (e) => {
 		setPosition({ x: e.clientX, y: e.clientY });
-	};
-
-	const onMouseEnter = () => {
-		setHidden(false);
-	};
-
-	const onMouseLeave = () => {
-		setHidden(true);
 	};
 
 	const onMouseDown = () => {
@@ -66,6 +49,23 @@ const Cursor = () => {
 
 	const onMouseUp = () => {
 		setClicked(false);
+	};
+
+	const onMouseLeave = () => {
+		setHidden(true);
+	};
+
+	const onMouseEnter = () => {
+		setHidden(false);
+	};
+
+	const handleLinkHoverEvents = () => {
+		document.querySelectorAll("a").forEach((el) => {
+			if (el.hasAttribute("class") && !el.classList.contains("active")) {
+				el.addEventListener("mouseover", () => setLinkHovered(true));
+				el.addEventListener("mouseout", () => setLinkHovered(false));
+			}
+		});
 	};
 
 	const cursorClasses = classNames("cursor", {

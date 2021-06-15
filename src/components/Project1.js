@@ -23,11 +23,11 @@ class Project1 extends React.Component {
 		return (
 			<section className="section h-screen flex items-center">
 				<div ref={(el) => (this.scene = el)}>
-					<div className="container slide" data-depth="0.10">
+					<div className="container" data-depth="0.10">
 						<h2 className="relative main-text select-none text-6xl sm:text-9xl text-white ml-10 z-50">
 							Cirillo's Artisan Pizza
 						</h2>
-						<div className="relative flex w-screen z-50">
+						<div className="relative flex z-50">
 							<a
 								href="https://www.cirilloswestchester.com/"
 								target="_blank"
@@ -47,14 +47,10 @@ class Project1 extends React.Component {
 								</h3>
 							</a>
 						</div>
-						<div
-							ref={(el) => (this.scene2 = el)}
-							className="absolute top-2 z-0"
-						>
+						<div ref={(el) => (this.scene2 = el)} className="absolute z-0">
 							<P1Images />
 						</div>
 					</div>
-					<Project1About />
 				</div>
 			</section>
 		);

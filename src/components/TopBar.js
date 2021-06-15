@@ -16,7 +16,7 @@ export class TopBar extends Component {
 		return (
 			<nav
 				ref={(el) => (this.scene = el)}
-				className="navbar z-10 flex flex-row justify-around w-screen xl:w-3/12 top-0 right-0 h-1 xl:pr-24 pt-16 fixed"
+				className="navbar z-10 flex flex-row justify-around w-screen xl:w-3/12 top-0 right-0 h-1 xl:pr-24 pt-12 absolute sm:fixed"
 			>
 				<a
 					href="https://github.com/DevinParentice"

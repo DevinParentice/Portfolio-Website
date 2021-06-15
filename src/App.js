@@ -1,10 +1,10 @@
 import React from "react";
 import CELLS from "vanta/dist/vanta.cells.min";
-import ReactFullpage from "@fullpage/react-fullpage";
 import Project1 from "./components/Project1";
 import SplashPage from "./components/SplashPage";
 import TopBar from "./components/TopBar";
 import "./styles/App.css";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 class App extends React.Component {
 	constructor() {
@@ -18,8 +18,6 @@ class App extends React.Component {
 			mouseControls: true,
 			touchControls: true,
 			gyroControls: true,
-			minHeight: 200.0,
-			minWidth: 200.0,
 			scale: 1.0,
 			color1: 0x0,
 			color2: 0x252525,
@@ -34,36 +32,17 @@ class App extends React.Component {
 
 	render() {
 		return (
-			<div className="App">
-				<div ref={this.vantaRef}>
-					<div>
-						<ReactFullpage
-							scrollOverflow={true}
-							fixedElements={".navbar"}
-							loopHorizontal={false}
-							controlArrows={false}
-							navigation={true}
-							navigationPosition={"right"}
-							slidesNavigation={true}
-							navigationToolTips={["1", "2", "3"]}
-							showActiveToolTip={true}
-							render={({ state, fullpageApi }) => {
-								return (
-									<div>
-										<div id="fullpage-wrapper">
-											<TopBar />
-											<main className="sections">
-												<SplashPage api={fullpageApi} />
-												<Project1 />
-											</main>
-										</div>
-									</div>
-								);
-							}}
-						/>
+			<Router>
+				<div className="App">
+					<div className="vanta" ref={this.vantaRef}>
+						<TopBar />
+						<main className="sections">
+							<Route path="/" component={SplashPage} />
+							<Route path="/projects" component={Project1} />
+						</main>
 					</div>
 				</div>
-			</div>
+			</Router>
 		);
 	}
 }
