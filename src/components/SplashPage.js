@@ -15,20 +15,40 @@ class SplashPage extends React.Component {
 
 	render() {
 		return (
-			<section className="h-screen flex items-center">
-				<div ref={(el) => (this.scene = el)}>
-					<div className="container" data-depth="0.10">
+			<section className="">
+				<div
+					ref={(el) => (this.scene = el)}
+					className="h-screen flex items-center"
+				>
+					<div data-depth="0.10">
 						<h1 className="main-text select-none text-6xl text-white ml-10">
 							Devin Parentice
 						</h1>
-						<div className="flex">
-							<a href={pdf} target="_blank" className="resume">
-								<h3 className="sub-text select-none text-2xl text-white ml-10 border-b-2 hover:text-white hover:border-white">
+						<h4 className="sub-text select-none text-white ml-10 mt-10 mr-10">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+							dicta hic harum magnam. Fugiat dolorem consequuntur at sequi, vel
+							debitis facere provident dolore quae ipsum sed voluptatibus id
+							dolor officiis.
+						</h4>
+						<div className="flex flex-col items-start">
+							<a href={pdf} target="_blank" className="ml-10 mt-10">
+								<h3 className="sub-text select-none text-2xl text-white  border-b-2 hover:text-white hover:border-white inline-block">
+									View Experience
+								</h3>
+							</a>
+							<a href="/projects" className="ml-10 mt-10">
+								<h3 className="sub-text select-none text-2xl text-white  border-b-2 hover:text-white hover:border-white inline-block">
+									View Projects
+								</h3>
+							</a>
+							<a href={pdf} target="_blank" className="ml-10 mt-10">
+								<h3 className="sub-text select-none text-2xl text-white  border-b-2 hover:text-white hover:border-white inline-block">
 									View Resume
 								</h3>
 							</a>
 						</div>
 					</div>
+					<footer className="flex items-end"></footer>
 				</div>
 			</section>
 		);

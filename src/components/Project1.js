@@ -1,7 +1,6 @@
 import React from "react";
 import Parallax from "parallax-js";
 import P1Images from "./P1Images";
-import Project1About from "./Project1About";
 
 class Project1 extends React.Component {
 	componentDidMount() {
