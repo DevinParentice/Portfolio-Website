@@ -4,7 +4,7 @@ import Project1 from "./components/Project1";
 import SplashPage from "./components/SplashPage";
 import TopBar from "./components/TopBar";
 import "./styles/App.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 class App extends React.Component {
 	constructor() {
@@ -37,7 +37,7 @@ class App extends React.Component {
 					<div className="vanta" ref={this.vantaRef}>
 						<TopBar />
 						<main className="sections">
-							<Route path="/" component={SplashPage} />
+							<Route path="/" exact component={SplashPage} />
 							<Route path="/projects" component={Project1} />
 						</main>
 					</div>

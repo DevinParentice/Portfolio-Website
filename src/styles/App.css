@@ -49,3 +49,31 @@
 	transform: translate(-50%, -50%) scale(1.8);
 	background-color: #fefefe;
 }
+
+.featured-project:nth-of-type(2n + 1) .project-content {
+	grid-column-start: 7;
+	grid-column-end: -1;
+}
+
+.featured-project:nth-of-type(2n + 1) .project-image {
+	grid-column-start: 1;
+	grid-column-end: 8;
+}
+
+.featured-project .project-content {
+	grid-area: 1 / 1 / -1 / 7;
+}
+
+.featured-project .project-image {
+	grid-area: 1 / 6 / -1 / -1;
+	z-index: 1;
+}
+
+.project-title {
+	font-size: clamp(24px, 5vw, 28px);
+}
+
+.featured-project:nth-of-type(2n + 1) .project-tech-stack li {
+	margin: 0 0 5px 20px;
+	white-space: nowrap;
+}

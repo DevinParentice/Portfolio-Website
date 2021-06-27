@@ -31,18 +31,13 @@ class SplashPage extends React.Component {
 							dolor officiis.
 						</h4>
 						<div className="flex flex-col items-start">
-							<a href={pdf} target="_blank" className="ml-10 mt-10">
-								<h3 className="sub-text select-none text-2xl text-white  border-b-2 hover:text-white hover:border-white inline-block">
-									View Experience
-								</h3>
-							</a>
 							<a href="/projects" className="ml-10 mt-10">
-								<h3 className="sub-text select-none text-2xl text-white  border-b-2 hover:text-white hover:border-white inline-block">
+								<h3 className="sub-text select-none text-2xl text-white border-b-2 hover:text-white hover:border-white inline-block">
 									View Projects
 								</h3>
 							</a>
 							<a href={pdf} target="_blank" className="ml-10 mt-10">
-								<h3 className="sub-text select-none text-2xl text-white  border-b-2 hover:text-white hover:border-white inline-block">
+								<h3 className="sub-text select-none text-2xl text-white border-b-2 hover:text-white hover:border-white inline-block">
 									View Resume
 								</h3>
 							</a>

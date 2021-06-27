@@ -1,54 +1,69 @@
 import React from "react";
 import Parallax from "parallax-js";
-import P1Images from "./P1Images";
+import pizza_image from "../images/pizza-girl-final.png";
 
 class Project1 extends React.Component {
 	componentDidMount() {
 		this.parallax = new Parallax(this.scene, {
 			pointerEvents: true,
 		});
-		this.parallax2 = new Parallax(this.scene2, {
-			pointerEvents: true,
-			relativeInput: true,
-		});
 	}
 
 	componentWillUnmount() {
 		this.parallax.disable();
-		this.parallax2.disable();
 	}
 
 	render() {
 		return (
-			<section className="section h-screen flex items-center">
+			<section className="min-h-screen">
 				<div ref={(el) => (this.scene = el)}>
 					<div className="container" data-depth="0.10">
-						<h2 className="relative main-text select-none text-6xl sm:text-9xl text-white ml-10 z-50">
-							Cirillo's Artisan Pizza
+						<h2 className="project-list-title text-white sub-text pt-60">
+							Projects I've Built
 						</h2>
-						<div className="relative flex z-50">
-							<a
-								href="https://www.cirilloswestchester.com/"
-								target="_blank"
-								className="web-link"
-							>
-								<h3 className="sub-text select-none text-2xl sm:text-4xl text-white ml-10 border-b-2 hover:text-white hover:border-white">
-									View Site
-								</h3>
-							</a>
-							<a
-								href="https://github.com/DevinParentice/cirillos-pizza"
-								target="_blank"
-								className="web-link"
-							>
-								<h3 className="sub-text select-none text-2xl sm:text-4xl text-white ml-10 border-b-2 hover:text-white hover:border-white">
-									View Code
-								</h3>
-							</a>
-						</div>
-						<div ref={(el) => (this.scene2 = el)} className="absolute z-0">
-							<P1Images />
-						</div>
+						<ul className="project-list list-none">
+							<li className="featured-project mb-24 grid gap-2.5 grid-cols-12 items-center">
+								<div className="project-content col-start-7 col-end--1 text-right relative ">
+									<h3 className="project-title text-white sub-text mb-5">
+										MovieMagic
+									</h3>
+									<div className="project-description sub-text text-white z-20 p-6 bg-black rounded">
+										Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+										Voluptas laboriosam distinctio officia culpa, voluptate
+										blanditiis cupiditate quidem ex laudantium quibusdam,
+										nesciunt quas itaque illum omnis. Sint suscipit quaerat
+										voluptatem!
+									</div>
+									<ul className="project-tech-stack flex justify-end list-none flex-wrap text-white sub-text mt-6 mb-2.5">
+										<li>Next.js</li>
+										<li>Typescript</li>
+										<li>Sass</li>
+									</ul>
+									<div className="project-links flex text-white justify-end items-center mt-2.5 -mr-2.5">
+										<a href="https://moviemagic.dev" className="p-2.5 mr-3">
+											<i className="fas fa-globe fa-2x"></i>
+										</a>
+										<a
+											href="https://github.com/DevinParentice/movie-magic"
+											className="p-2.5 ml-3"
+										>
+											<i className="fas fa-code fa-2x"></i>
+										</a>
+									</div>
+								</div>
+								<div className="project-image">
+									<img src={pizza_image} alt="Girl holding pizza" />
+								</div>
+							</li>
+							<li className="featured-project">
+								<div className="project-content">
+									<h3 className="project-title"></h3>
+									<div className="project-description"></div>
+									<ul className="project-tech-stack"></ul>
+									<div className="project-links"></div>
+								</div>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</section>
