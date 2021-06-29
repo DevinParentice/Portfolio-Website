@@ -1,10 +1,11 @@
 import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+
 import CELLS from "vanta/dist/vanta.cells.min";
-import Project1 from "./components/Project1";
+import Projects from "./components/Projects";
 import SplashPage from "./components/SplashPage";
 import TopBar from "./components/TopBar";
 import "./styles/App.css";
-import { BrowserRouter as Router, Route } from "react-router-dom";
 
 class App extends React.Component {
 	constructor() {
@@ -35,10 +36,9 @@ class App extends React.Component {
 			<Router>
 				<div className="App">
 					<div className="vanta" ref={this.vantaRef}>
-						<TopBar />
 						<main className="sections">
 							<Route path="/" exact component={SplashPage} />
-							<Route path="/projects" component={Project1} />
+							<Route path="/projects" component={Projects} />
 						</main>
 					</div>
 				</div>

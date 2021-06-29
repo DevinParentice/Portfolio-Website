@@ -43,7 +43,6 @@ class SplashPage extends React.Component {
 							</a>
 						</div>
 					</div>
-					<footer className="flex items-end"></footer>
 				</div>
 			</section>
 		);
