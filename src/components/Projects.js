@@ -22,13 +22,13 @@ class Project1 extends React.Component {
 			<section className="min-h-screen ml-6 mr-6">
 				<div ref={(el) => (this.scene = el)}>
 					<div className="xl:pl-24 xl:pr-24 ml-auto mr-auto" data-depth="0.10">
-						<h2 className="project-list-title text-white main-text text-center md:text-left pt-60 text-6xl select-none">
+						<h2 className="project-list-title text-white main-text text-center md:text-left pt-16 md:pt-32 text-6xl select-none">
 							Projects I've Built
 						</h2>
 						<hr />
 						<ul className="project-list list-none mt-12">
 							<li className="featured-project mb-24 flex flex-row-reverse justify-between flex-wrap lg:flex-nowrap">
-								<div className="project-content text-right lg:w-2/3 xl:w-1/3">
+								<div className="project-content text-center md:text-right lg:w-2/3 xl:w-1/3">
 									<h3 className="project-title text-white sub-text select-none mb-5 text-4xl">
 										1. MovieMagic
 									</h3>
