@@ -2,6 +2,7 @@ import React from "react";
 import Parallax from "parallax-js";
 import moviemagic from "../images/moviemagic.gif";
 import cirillospizza from "../images/cirillospizza.gif";
+import eritea from "../images/eritea.gif";
 import ProjectCards from "./ProjectCards";
 import ReactFreezeframe from "react-freezeframe";
 
@@ -145,10 +146,7 @@ class Project1 extends React.Component {
 									</div>
 								</div>
 								<div className="project-image z-0 rounded-lg overflow-hidden select-none">
-									<ReactFreezeframe
-										src={moviemagic}
-										options={{ overlay: true }}
-									/>
+									<ReactFreezeframe src={eritea} options={{ overlay: true }} />
 								</div>
 							</li>
 						</ul>
