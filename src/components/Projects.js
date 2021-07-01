@@ -22,7 +22,7 @@ class Project1 extends React.Component {
 			<section className="min-h-screen ml-6 mr-6">
 				<div ref={(el) => (this.scene = el)}>
 					<div className="xl:pl-24 xl:pr-24 ml-auto mr-auto" data-depth="0.10">
-						<h2 className="project-list-title text-white sub-text text-center md:text-left pt-60 text-6xl select-none">
+						<h2 className="project-list-title text-white main-text text-center md:text-left pt-60 text-6xl select-none">
 							Projects I've Built
 						</h2>
 						<hr />

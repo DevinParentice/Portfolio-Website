@@ -14,34 +14,30 @@ export class TopBar extends Component {
 
 	render() {
 		return (
-			<nav
-				ref={(el) => (this.scene = el)}
-				className="navbar z-10 flex flex-row justify-around w-screen xl:w-3/12 top-0 right-0 h-1 xl:pr-24 pt-12 absolute sm:fixed"
-			>
-				<a
-					href="https://github.com/DevinParentice"
-					target="_blank"
-					className="nav-item"
-					data-depth="0.15"
+			<div ref={(el) => (this.scene = el)}>
+				<nav
+					className="text-white sub-text flex justify-between pt-12 mr-6 ml-6 md:mr-16 md:ml-16 lg:ml-24 lg:mr-24"
+					data-depth="0.05"
 				>
-					<i className="fab fa-github-alt fa-3x text-white hover:text-white"></i>
-				</a>
-				<a
-					href="https://www.linkedin.com/in/devin-parentice-2372b4170/"
-					target="_blank"
-					className="nav-item"
-					data-depth="0.15"
-				>
-					<i className="fab fa-linkedin-in fa-3x text-white hover:text-white"></i>
-				</a>
-				<a
-					href="mailto:devinparentice@gmail.com"
-					className="nav-item"
-					data-depth="0.15"
-				>
-					<i className="fas fa-paper-plane fa-3x text-white hover:text-white"></i>
-				</a>
-			</nav>
+					<a href="/" className=" main-text text-6xl">
+						DP
+					</a>
+					<div className="flex justify-around w-64 lg:w-96">
+						<a href="https://github.com/DevinParentice" target="_blank">
+							<i className="fab fa-github-alt fa-3x text-white hover:text-white"></i>
+						</a>
+						<a
+							href="https://www.linkedin.com/in/devin-parentice-2372b4170/"
+							target="_blank"
+						>
+							<i className="fab fa-linkedin-in fa-3x text-white hover:text-white"></i>
+						</a>
+						<a href="mailto:devinparentice@gmail.com">
+							<i className="fas fa-paper-plane fa-3x text-white hover:text-white"></i>
+						</a>
+					</div>
+				</nav>
+			</div>
 		);
 	}
 }

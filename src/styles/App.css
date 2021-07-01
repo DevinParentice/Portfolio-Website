@@ -9,8 +9,8 @@
 	height: 102% !important;
 }
 
-.nav-item {
-	position: relative !important;
+nav {
+	display: flex !important;
 }
 
 ::-moz-selection,

@@ -3,7 +3,7 @@ import React from "react";
 export default function ProjectCards() {
 	return (
 		<div className="2xl:ml-48 2xl:mr-48">
-			<h2 className="project-list-title text-white sub-text text-center md:text-left mt-40 text-6xl select-none">
+			<h2 className="project-list-title text-white main-text text-center md:text-left mt-40 text-6xl select-none">
 				Other Projects
 			</h2>
 			<hr />

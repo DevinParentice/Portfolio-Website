@@ -37,6 +37,7 @@ class App extends React.Component {
 				<div className="App">
 					<div className="vanta" ref={this.vantaRef}>
 						<main className="sections">
+							<TopBar />
 							<Route path="/" exact component={SplashPage} />
 							<Route path="/projects" component={Projects} />
 						</main>
