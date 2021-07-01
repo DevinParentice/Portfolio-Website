@@ -23,16 +23,21 @@ export class TopBar extends Component {
 						DP
 					</a>
 					<div className="flex justify-around w-64 lg:w-96">
-						<a href="https://github.com/DevinParentice" target="_blank">
+						<a
+							href="https://github.com/DevinParentice"
+							target="_blank"
+							className="pr-1"
+						>
 							<i className="fab fa-github-alt fa-3x text-white hover:text-white"></i>
 						</a>
 						<a
 							href="https://www.linkedin.com/in/devin-parentice-2372b4170/"
 							target="_blank"
+							className="pr-1 pl-1"
 						>
 							<i className="fab fa-linkedin-in fa-3x text-white hover:text-white"></i>
 						</a>
-						<a href="mailto:devinparentice@gmail.com">
+						<a href="mailto:devinparentice@gmail.com" className="pl-1">
 							<i className="fas fa-paper-plane fa-3x text-white hover:text-white"></i>
 						</a>
 					</div>
