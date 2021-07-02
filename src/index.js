@@ -10,8 +10,6 @@ const isMobile = () => {
 };
 
 const Cursor = () => {
-	if (typeof navigator !== "undefined" && isMobile()) return null;
-
 	const [position, setPosition] = useState({ x: 0, y: 0 });
 	const [clicked, setClicked] = useState(false);
 	const [linkHovered, setLinkHovered] = useState(false);
@@ -22,6 +20,10 @@ const Cursor = () => {
 		handleLinkHoverEvents();
 		return () => removeEventListeners();
 	}, []);
+
+	if (typeof navigator !== "undefined" && isMobile()) {
+		return null;
+	}
 
 	const addEventListeners = () => {
 		document.addEventListener("mousemove", onMouseMove);
