@@ -21,10 +21,6 @@ const Cursor = () => {
 		return () => removeEventListeners();
 	}, []);
 
-	if (typeof navigator !== "undefined" && isMobile()) {
-		return null;
-	}
-
 	const addEventListeners = () => {
 		document.addEventListener("mousemove", onMouseMove);
 		document.addEventListener("mouseenter", onMouseEnter);
@@ -75,6 +71,10 @@ const Cursor = () => {
 		"cursor-hidden": hidden,
 		"cursor-link-hovered": linkHovered,
 	});
+
+	if (typeof navigator !== "undefined" && isMobile()) {
+		return null;
+	}
 
 	return (
 		<div
