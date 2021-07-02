@@ -16,26 +16,34 @@ const Cursor = () => {
 	const [hidden, setHidden] = useState(false);
 
 	useEffect(() => {
+		const addEventListeners = () => {
+			document.addEventListener("mousemove", onMouseMove);
+			document.addEventListener("mouseenter", onMouseEnter);
+			document.addEventListener("mouseleave", onMouseLeave);
+			document.addEventListener("mousedown", onMouseDown);
+			document.addEventListener("mouseup", onMouseUp);
+		};
 		addEventListeners();
+		const handleLinkHoverEvents = () => {
+			document.querySelectorAll("a").forEach((el) => {
+				if (el.hasAttribute("class") && !el.classList.contains("active")) {
+					el.addEventListener("mouseover", () => setLinkHovered(true));
+					el.addEventListener("mouseout", () => setLinkHovered(false));
+				}
+			});
+		};
 		handleLinkHoverEvents();
-		return () => removeEventListeners();
+		return () => {
+			const removeEventListeners = () => {
+				document.removeEventListener("mousemove", onMouseMove);
+				document.removeEventListener("mouseenter", onMouseEnter);
+				document.removeEventListener("mouseleave", onMouseLeave);
+				document.removeEventListener("mousedown", onMouseDown);
+				document.removeEventListener("mouseup", onMouseUp);
+			};
+			removeEventListeners();
+		};
 	}, []);
-
-	const addEventListeners = () => {
-		document.addEventListener("mousemove", onMouseMove);
-		document.addEventListener("mouseenter", onMouseEnter);
-		document.addEventListener("mouseleave", onMouseLeave);
-		document.addEventListener("mousedown", onMouseDown);
-		document.addEventListener("mouseup", onMouseUp);
-	};
-
-	const removeEventListeners = () => {
-		document.removeEventListener("mousemove", onMouseMove);
-		document.removeEventListener("mouseenter", onMouseEnter);
-		document.removeEventListener("mouseleave", onMouseLeave);
-		document.removeEventListener("mousedown", onMouseDown);
-		document.removeEventListener("mouseup", onMouseUp);
-	};
 
 	const onMouseMove = (e) => {
 		setPosition({ x: e.clientX, y: e.clientY });
@@ -55,15 +63,6 @@ const Cursor = () => {
 
 	const onMouseEnter = () => {
 		setHidden(false);
-	};
-
-	const handleLinkHoverEvents = () => {
-		document.querySelectorAll("a").forEach((el) => {
-			if (el.hasAttribute("class") && !el.classList.contains("active")) {
-				el.addEventListener("mouseover", () => setLinkHovered(true));
-				el.addEventListener("mouseout", () => setLinkHovered(false));
-			}
-		});
 	};
 
 	const cursorClasses = classNames("cursor", {
