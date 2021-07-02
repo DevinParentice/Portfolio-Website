@@ -25,11 +25,15 @@ html {
 }
 
 .vanta-canvas {
-	height: 102% !important;
+	height: 102.1% !important;
 }
 
 nav {
 	display: flex !important;
+}
+
+.nav-index {
+	z-index: 90 !important;
 }
 
 ::-moz-selection,

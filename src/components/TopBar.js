@@ -14,7 +14,7 @@ export class TopBar extends Component {
 
 	render() {
 		return (
-			<div ref={(el) => (this.scene = el)}>
+			<div ref={(el) => (this.scene = el)} className="nav-index">
 				<nav
 					className="text-white sub-text flex justify-between pt-12 mr-6 ml-6 md:mr-16 md:ml-16 lg:ml-24 lg:mr-24"
 					data-depth="0.05"
