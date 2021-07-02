@@ -37,7 +37,7 @@ export class TopBar extends Component {
 						>
 							<i className="fab fa-linkedin-in fa-3x text-white hover:text-white"></i>
 						</a>
-						<a href="mailto:devinparentice@gmail.com" className="pl-1">
+						<a href="/contact" className="pl-1">
 							<i className="fas fa-paper-plane fa-3x text-white hover:text-white"></i>
 						</a>
 					</div>
