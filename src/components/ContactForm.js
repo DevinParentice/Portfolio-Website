@@ -13,10 +13,10 @@ export default function ContactForm() {
 	} = useForm();
 
 	const toastifySuccess = () => {
-		toast("Form sent!", {
+		toast.dark("Email sent!", {
 			position: "bottom-right",
 			autoClose: 5000,
-			hideProgressBar: true,
+			hideProgressBar: false,
 			closeOnClick: true,
 			pauseOnHover: true,
 			draggable: false,
@@ -34,10 +34,10 @@ export default function ContactForm() {
 				message: data.message,
 			};
 			await emailjs.send(
-				"service_ljqplbj",
-				"template_ob0w3b7",
+				process.env.REACT_APP_SERVICE_ID,
+				process.env.REACT_APP_TEMPLATE_ID,
 				templateParams,
-				"user_xEIr27zQYgnfPe3fhtgnp"
+				process.env.REACT_APP_USER_ID
 			);
 			reset();
 			toastifySuccess();
