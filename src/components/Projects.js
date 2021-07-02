@@ -74,6 +74,7 @@ class Project1 extends React.Component {
 												href="https://moviemagic.dev"
 												className="p-2.5 mr-3"
 												target="_blank"
+												rel="noreferrer"
 											>
 												<i className="fas fa-external-link-alt fa-2x"></i>
 											</a>
@@ -81,6 +82,7 @@ class Project1 extends React.Component {
 												href="https://github.com/DevinParentice/movie-magic"
 												className="p-2.5 ml-3"
 												target="_blank"
+												rel="noreferrer"
 											>
 												<i className="fas fa-code fa-2x"></i>
 											</a>
@@ -116,6 +118,7 @@ class Project1 extends React.Component {
 												href="https://www.cirilloswestchester.com/"
 												className="p-2.5 mr-3"
 												target="_blank"
+												rel="noreferrer"
 											>
 												<i className="fas fa-external-link-alt fa-2x"></i>
 											</a>
@@ -123,6 +126,7 @@ class Project1 extends React.Component {
 												href="https://github.com/DevinParentice/cirillos-pizza"
 												className="p-2.5 ml-3"
 												target="_blank"
+												rel="noreferrer"
 											>
 												<i className="fas fa-code fa-2x"></i>
 											</a>
@@ -157,6 +161,7 @@ class Project1 extends React.Component {
 												href="https://drinkeritea.com/"
 												className="p-2.5 mr-3"
 												target="_blank"
+												rel="noreferrer"
 											>
 												<i className="fas fa-external-link-alt fa-2x"></i>
 											</a>
@@ -164,6 +169,7 @@ class Project1 extends React.Component {
 												href="https://github.com/DevinParentice/EriTea"
 												className="p-2.5 ml-3"
 												target="_blank"
+												rel="noreferrer"
 											>
 												<i className="fas fa-code fa-2x"></i>
 											</a>

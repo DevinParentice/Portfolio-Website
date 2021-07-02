@@ -57,7 +57,12 @@ class SplashPage extends React.Component {
 										View Projects
 									</h3>
 								</a>
-								<a href={pdf} target="_blank" className="ml-10 mt-10">
+								<a
+									href={pdf}
+									target="_blank"
+									rel="noreferrer"
+									className="ml-10 mt-10"
+								>
 									<h3 className="sub-text select-none text-lg sm:text-2xl lg:text-3xl text-white border-b-2 hover:text-white hover:border-white inline-block">
 										View Resume
 									</h3>

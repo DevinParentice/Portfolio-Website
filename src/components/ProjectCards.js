@@ -15,6 +15,7 @@ export default function ProjectCards() {
 								href="https://github.com/DevinParentice/TriviaBot"
 								className="ml-4"
 								target="_blank"
+								rel="noreferrer"
 							>
 								<i className="fas fa-code fa-lg"></i>
 							</a>
@@ -43,6 +44,7 @@ export default function ProjectCards() {
 								href="https://www.devinparentice.com"
 								className="ml-4"
 								target="_blank"
+								rel="noreferrer"
 							>
 								<i className="fas fa-external-link-alt fa-lg"></i>
 							</a>
@@ -50,6 +52,7 @@ export default function ProjectCards() {
 								href="https://github.com/DevinParentice/Portfolio-Website"
 								className="ml-4"
 								target="_blank"
+								rel="noreferrer"
 							>
 								<i className="fas fa-code fa-lg"></i>
 							</a>
@@ -78,6 +81,7 @@ export default function ProjectCards() {
 								href="https://github.com/DevinParentice/DogSMS"
 								className="ml-4"
 								target="_blank"
+								rel="noreferrer"
 							>
 								<i className="fas fa-code fa-lg"></i>
 							</a>
@@ -125,6 +129,7 @@ export default function ProjectCards() {
 								href="https://github.com/DevinParentice/Original-Portfolio-Website"
 								className="ml-4"
 								target="_blank"
+								rel="noreferrer"
 							>
 								<i className="fas fa-code fa-lg"></i>
 							</a>
@@ -153,6 +158,7 @@ export default function ProjectCards() {
 								href="https://github.com/DevinParentice/HashCracker"
 								className="ml-4"
 								target="_blank"
+								rel="noreferrer"
 							>
 								<i className="fas fa-code fa-lg"></i>
 							</a>
