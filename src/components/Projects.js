@@ -1,5 +1,6 @@
 import React from "react";
 import Parallax from "parallax-js";
+import CELLS from "vanta/dist/vanta.cells.min";
 import moviemagic from "../images/moviemagic.gif";
 import cirillospizza from "../images/cirillospizza.gif";
 import eritea from "../images/eritea.gif";
