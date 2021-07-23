@@ -127,7 +127,7 @@ export default function ContactForm() {
 								{...register("message", {
 									required: true,
 								})}
-								className="form-control formInput w-full bg-gray-900 rounded-sm pl-4 pr-4 pt-2 pb-2 text-white"
+								className="form-control formInput resize-none w-full bg-gray-900 rounded-sm pl-4 pr-4 pt-2 pb-2 text-white"
 								placeholder="Message"
 							></textarea>
 						</div>
