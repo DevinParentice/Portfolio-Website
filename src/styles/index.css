@@ -5,10 +5,12 @@
 @font-face {
 	font-family: "Bogart-Regular";
 	src: local("Bogart-Regular"),
+		url(../fonts/Bogart-Regular.woff2) format("woff2"),
 		url(../fonts/Bogart-Regular.ttf) format("truetype");
 }
 
 @font-face {
 	font-family: "Bogart-Light";
-	src: local("Bogart-Light"), url(../fonts/Bogart-Light.ttf) format("truetype");
+	src: local("Bogart-Light"), url(../fonts/Bogart-Light.woff2) format("woff2"),
+		url(../fonts/Bogart-Light.ttf) format("truetype");
 }
