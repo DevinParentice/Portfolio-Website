@@ -45,17 +45,17 @@ class SplashPage extends React.Component {
 							<h1 className="main-text select-none text-7xl sm:text-8xl lg:text-9xl text-white ml-10">
 								Devin Parentice
 							</h1>
-							<h4 className="sub-text select-none text-white text-xl sm:text-2xl lg:text-3xl ml-10 mt-10 lg:w-3/4">
+							<h3 className="sub-text select-none text-white text-xl sm:text-2xl lg:text-3xl ml-10 mt-10 lg:w-3/4">
 								I'm a Philadelphia-based software engineer who loves to build
 								incredible digital experiences. Currently, I'm a college senior
 								at West Chester University who is focused on learning new
 								technologies, building cool apps, and studying.
-							</h4>
+							</h3>
 							<div className="flex items-start">
 								<a href="/projects" className="ml-10 mt-10">
-									<h3 className="sub-text select-none text-lg sm:text-2xl lg:text-3xl text-white border-b-2 hover:text-white hover:border-white inline-block">
+									<h4 className="sub-text select-none text-lg sm:text-2xl lg:text-3xl text-white border-b-2 hover:text-white hover:border-white inline-block">
 										View Projects
-									</h3>
+									</h4>
 								</a>
 								<a
 									href={pdf}
@@ -63,9 +63,9 @@ class SplashPage extends React.Component {
 									rel="noreferrer"
 									className="ml-10 mt-10"
 								>
-									<h3 className="sub-text select-none text-lg sm:text-2xl lg:text-3xl text-white border-b-2 hover:text-white hover:border-white inline-block">
+									<h4 className="sub-text select-none text-lg sm:text-2xl lg:text-3xl text-white border-b-2 hover:text-white hover:border-white inline-block">
 										View Resume
-									</h3>
+									</h4>
 								</a>
 							</div>
 						</div>

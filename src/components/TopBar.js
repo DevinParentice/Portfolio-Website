@@ -28,6 +28,7 @@ export class TopBar extends Component {
 							target="_blank"
 							rel="noreferrer"
 							className="pr-1"
+							aria-label="Github"
 						>
 							<i className="fab fa-github-alt fa-3x text-white hover:text-white"></i>
 						</a>
@@ -36,10 +37,11 @@ export class TopBar extends Component {
 							target="_blank"
 							rel="noreferrer"
 							className="pr-1 pl-1"
+							aria-label="LinkedIn"
 						>
 							<i className="fab fa-linkedin-in fa-3x text-white hover:text-white"></i>
 						</a>
-						<a href="/contact" className="pl-1">
+						<a href="/contact" className="pl-1" aria-label="Contact">
 							<i className="fas fa-paper-plane fa-3x text-white hover:text-white"></i>
 						</a>
 					</div>
