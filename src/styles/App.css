@@ -90,3 +90,8 @@ nav {
 .project-image img {
 	border-radius: 0.5rem;
 }
+
+.grayscale-emoji {
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+}

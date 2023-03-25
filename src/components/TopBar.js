@@ -33,7 +33,7 @@ export class TopBar extends Component {
 							<i className="fab fa-github-alt fa-3x text-white hover:text-white"></i>
 						</a>
 						<a
-							href="https://www.linkedin.com/in/devin-parentice-2372b4170/"
+							href="https://www.linkedin.com/in/devin-parentice/"
 							target="_blank"
 							rel="noreferrer"
 							className="pr-1 pl-1"
@@ -41,7 +41,11 @@ export class TopBar extends Component {
 						>
 							<i className="fab fa-linkedin-in fa-3x text-white hover:text-white"></i>
 						</a>
-						<a href="/contact" className="pl-1" aria-label="Contact">
+						<a
+							href="mailto:devinparentice@gmail.com"
+							className="pl-1 tooltip"
+							aria-label="Contact"
+						>
 							<i className="fas fa-paper-plane fa-3x text-white hover:text-white"></i>
 						</a>
 					</div>
